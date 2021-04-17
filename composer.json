@@ -1,6 +1,6 @@
 {
     "name": "hum/mediafile",
-    "description": "HUM-Mediafile - A simple php package.",
+    "description": "HUM-Mediafile - A simple laravel package.",
     "type": "project",
     "license": "MIT",
     "authors": [

@@ -8,14 +8,14 @@ class FilesUploads
     public function postImages($images,$storeurl)
     {
         $validator = Validator::make($images, [
-            'images.*' => 'required|mimes:jpg,jpeg,png,bmp|max:2048'
+            'images' => 'required|mimes:jpg,jpeg,png,bmp|max:2048'
         ]);
         $responsearr = $imgarray = array();
         if ($validator->fails()) {
             //return error if validation fails
             $errors = $validator->errors();
             $responsearr['output']['status'] = 'failure';
-            $responsearr['output']['message'] = $errors->first('images.*');
+            $responsearr['output']['message'] = $errors->first('images');
         } else{
             //for multiple file upload
             foreach($images as $key=>$file){
