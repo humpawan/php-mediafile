@@ -1,0 +1,10 @@
+{
+    "name": "user/mediafile",
+    "authors": [
+        {
+            "name": "Pawan",
+            "email": "pawan.garg@sufalamtech.com"
+        }
+    ],
+    "require": {}
+}
