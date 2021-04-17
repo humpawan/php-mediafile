@@ -15,7 +15,7 @@ class FilesUploads
             //return error if validation fails
             $errors = $validator->errors();
             $responsearr['output']['status'] = 'failure';
-            $responsearr['output']['message'] = $errors->first('images');
+            $responsearr['output']['message'] = $errors;
         } else{
             //for multiple file upload
             foreach($images as $key=>$file){
