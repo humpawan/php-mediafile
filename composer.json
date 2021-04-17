@@ -15,5 +15,7 @@
             "hum\\mediafile\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        
+    }
 }
